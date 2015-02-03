@@ -1,9 +1,10 @@
 function Frame() {
-
+	this.totalScore = 0;
+	this.scores = [];
 };
 
 Frame.prototype.score = function() {
-	return 0
+	return this.totalScore;
 };
 
 module.exports = Frame;
