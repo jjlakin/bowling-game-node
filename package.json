@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "grunt": "^0.4.5",
     "jasmine-node": "^1.14.5"
   }
 }
