@@ -7,18 +7,18 @@ function Frame() {
 
 Frame.prototype.score = function(score) {
 	this.scores.push(score);
-	
+
 };
 
 Frame.prototype.totalScore = function() {
-	
+
 	if(this.scores[0]){
 		return this.scores[0];
 	}else{
 		return 0;
 	}
-	
-	
+
+
 };
 
 module.exports = Frame;
