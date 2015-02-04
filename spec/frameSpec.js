@@ -9,7 +9,8 @@ describe('Frame', function() {
 	});
 
 	it('should have a score of 0 by default', function() {
-		expect(frame.totalScore()).toEqual(0);
+		
+		expect(frame.frameScore).toEqual(0);
 	});
 
 	it('should have an no scores by default', function() {
@@ -17,14 +18,16 @@ describe('Frame', function() {
 	});
 
 	it('should accept a result', function() {
-		frame.score(4)
-		expect(frame.totalScore()).toEqual(4);
+		frame.score(4);
+		frame.totalScore();
+		expect(frame.frameScore).toEqual(4);
 	});
 
 	it('should accept a second result', function() {
-		frame.score(4)
-		frame.score(3)
-		expect(frame.totalScore()).toEqual(7);
+		frame.score(4);
+		frame.score(3);
+		frame.totalScore();
+		expect(frame.frameScore).toEqual(7);
 	});
 
 });
